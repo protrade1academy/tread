@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTrade Academy - Обучение профессиональному трейдингу</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <div class="candlestick">
+                <div class="wick"></div>
+                <div class="body"></div>
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="ProTrade Academy">
+                    <span>ProTrade</span>
+                </a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="courses.html">Курсы</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#" class="btn btn-outline">Войти</a>
+                    <a href="#" class="btn btn-primary">Регистрация</a>
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Стань профессиональным трейдером</h1>
+                <p class="hero-subtitle">Освойте торговлю на финансовых рынках с нашими экспертами и начните зарабатывать уже сегодня</p>
+                <div class="hero-actions">
+                    <a href="courses.html" class="btn btn-primary btn-lg">Начать обучение</a>
+                    <a href="#" class="btn btn-outline btn-lg">Бесплатный урок</a>
+                </div>
+            </div>
+            <div class="hero-market-data">
+                <div class="market-widget">
+                    <div class="ticker">
+                        <span class="pair">EUR/USD</span>
+                        <span class="price">1.1289</span>
+                        <span class="change up">-0.12%</span>
+                    </div>
+                    <div class="ticker">
+                        <span class="pair">BTC/USD</span>
+                        <span class="price">99576</span>
+                        <span class="change down">+2.72%</span>
+                    </div>
+                    <div class="ticker">
+                        <span class="pair">S&P 500</span>
+                        <span class="price">5644.10</span>
+                        <span class="change up">+0.23%</span>
+                    </div>
+                    <div class="ticker">
+                        <span class="pair">Gold</span>
+                        <span class="price">3355.16</span>
+                        <span class="change down">-0.28%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-chart">
+            <canvas id="heroChart"></canvas>
+        </div>
+    </section>
+
+    
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нашу академию</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Практический подход</h3>
+                    <p>Обучение на реальных рыночных ситуациях с практическими заданиями</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Опытные трейдеры</h3>
+                    <p>Преподаватели с опытом работы на рынке от 10 лет</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Доступные цены</h3>
+                    <p>Гибкая система оплаты и рассрочка без переплат</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Ответим на все вопросы и поможем в любое время</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="popular-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Популярные курсы</h2>
+                <a href="courses.html" class="view-all">Все курсы <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-badge">Бестселлер</div>
+                    <div class="course-image">
+                        <img src="images/course1.jpg" alt="Основы трейдинга">
+                    </div>
+                    <div class="course-content">
+                        <h3>Основы трейдинга для начинающих</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-graduate"></i> 1,245 студентов</span>
+                            <span><i class="fas fa-star"></i> 4.9 (256)</span>
+                        </div>
+                        <p>Изучите базовые принципы торговли на финансовых рынках и создайте фундамент для успешного трейдинга.</p>
+                        <div class="course-footer">
+                            <span class="price">$99</span>
+                            <a href="#" class="btn btn-sm">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-badge">Новинка</div>
+                    <div class="course-image">
+                        <img src="images/course2.jpg" alt="Технический анализ">
+                    </div>
+                    <div class="course-content">
+                        <h3>Профессиональный технический анализ</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-graduate"></i> 876 студентов</span>
+                            <span><i class="fas fa-star"></i> 4.8 (187)</span>
+                        </div>
+                        <p>Освойте все инструменты технического анализа и научитесь прогнозировать движение цен.</p>
+                        <div class="course-footer">
+                            <span class="price">$149</span>
+                            <a href="#" class="btn btn-sm">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-badge">Продвинутый</div>
+                    <div class="course-image">
+                        <img src="images/course3.jpg" alt="Алготрейдинг">
+                    </div>
+                    <div class="course-content">
+                        <h3>Алготрейдинг и автоматизация</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user-graduate"></i> 532 студентов</span>
+                            <span><i class="fas fa-star"></i> 4.7 (124)</span>
+                        </div>
+                        <p>Создавайте торговых роботов и автоматизируйте свою стратегию для пассивного заработка.</p>
+                        <div class="course-footer">
+                            <span class="price">$199</span>
+                            <a href="#" class="btn btn-sm">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" data-count="5000">тысячи</div>
+                    <div class="stat-label">Успешных студентов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" data-count="120">10</div>
+                    <div class="stat-label">Профессиональных курсов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" data-count="98">100</div>
+                    <div class="stat-label">% удовлетворенности</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" data-count="15">17</div>
+                    <div class="stat-label">Лет опыта</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших студентов</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>Благодаря курсам ProTrade Academy я смог систематизировать свои знания и начать стабильно зарабатывать на форексе. Особенно ценна практическая часть с разбором реальных сделок.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Алексей">
+                        </div>
+                        <div class="author-info">
+                            <h4>Алексей К.</h4>
+                            <span>Трейдер, 2 года опыта</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>Лучшая инвестиция в себя! Преподаватели объясняют сложные вещи простым языком. После базового курса сразу записалась на продвинутый. Результаты превзошли ожидания!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Елена">
+                        </div>
+                        <div class="author-info">
+                            <h4>Елена С.</h4>
+                            <span>Инвестор</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>Как IT-специалист оценил курс по алготрейдингу. Научился писать простых торговых ботов и автоматизировал свою стратегию. Теперь система работает на меня 24/7.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Дмитрий">
+                        </div>
+                        <div class="author-info">
+                            <h4>Дмитрий П.</h4>
+                            <span>Разработчик</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готовы начать свой путь в трейдинге?</h2>
+                <p>Присоединяйтесь к тысячам студентов, которые уже изменили свою жизнь с помощью наших курсов</p>
+                <a href="#" class="btn btn-primary btn-lg">Записаться сейчас</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="ProTrade Academy">
+                        <span>ProTrade</span>
+                    </div>
+                    <p>Обучаем профессиональному трейдингу с 2020 года. Наша миссия - сделать финансовые рынки доступными для каждого.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Курсы</h3>
+                    <ul>
+                        <li><a href="#">Для начинающих</a></li>
+                        <li><a href="#">Технический анализ</a></li>
+                        <li><a href="#">Фундаментальный анализ</a></li>
+                        <li><a href="#">Алготрейдинг</a></li>
+                        <li><a href="#">Психология трейдинга</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Преподаватели</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Томск </li>
+                        <li><i class="fas fa-phone"></i> +7 (952) 800-16-70</li>
+                        <li><i class="fas fa-envelope"></i> protrade1academy@gmail.com</li>
+                    </ul>
+                    <div class="newsletter">
+                        <h4>Подписка на новости</h4>
+                        <form>
+                            <input type="email" placeholder="Ваш email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2020-2025 ProTrade Academy. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

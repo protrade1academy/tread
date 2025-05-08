@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | ProTrade Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="candlestick">
+                <div class="wick"></div>
+                <div class="body"></div>
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+ 
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="ProTrade Academy">
+                    <span>ProTrade</span>
+                </a>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="courses.html">Курсы</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html" class="active">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#" class="btn btn-outline">Войти</a>
+                    <a href="#" class="btn btn-primary">Регистрация</a>
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  
+    <section class="page-header">
+        <div class="container">
+            <h1>Свяжитесь с нами</h1>
+            <p>Мы всегда рады ответить на ваши вопросы и помочь с выбором курса</p>
+        </div>
+    </section>
+
+ 
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Контактная информация</h2>
+                    <p>Если у вас есть вопросы о наших курсах или вы хотите записаться на обучение, свяжитесь с нами любым удобным способом.</p>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Адрес</h3>
+                            <p>Томск</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Телефон</h3>
+                            <p>+7 (913)8630811</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>protrade1academy@gmail.com</p>
+                            <p>TG @S18sotoji6</p>
+                            <p>TG bot @Tradinglearning2025_bot</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Часы работы</h3>
+                            <p>Пн-Пт: 9:00 - 20:00</p>
+                            <p>Сб-Вс: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-viber"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-skype"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Напишите нам</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема</label>
+                            <select id="subject" name="subject">
+                                <option value="course">Вопрос о курсе</option>
+                                <option value="payment">Оплата и скидки</option>
+                                <option value="cooperation">Сотрудничество</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">Я согласен на обработку персональных данных</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Мы на карте</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373789134755!2d37.61085971593094!3d55.75199998055296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311!2z0KLQtdGF0L3QuNC60L7Qu9Cw!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как выбрать подходящий курс?</h3>
+                        <div class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы рекомендуем начать с базового курса, даже если у вас есть небольшой опыт. После его завершения наши преподаватели помогут вам выбрать дальнейшее направление обучения в зависимости от ваших целей и предпочтений.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли у вас бесплатные материалы?</h3>
+                        <div class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы регулярно публикуем бесплатные уроки и материалы в нашем блоге и на YouTube-канале. Также вы можете записаться на бесплатный вводный урок любого курса.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли обучаться в рассрочку?</h3>
+                        <div class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предлагаем беспроцентную рассрочку на все курсы сроком до 12 месяцев. Для оформления рассрочки вам понадобится только паспорт.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие документы я получу после обучения?</h3>
+                        <div class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>После успешного завершения курса вы получите сертификат ProTrade Academy. На некоторые курсы также возможно получение международного сертификата (уточняйте у менеджера).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли у вас трудоустройство для выпускников?</h3>
+                        <div class="faq-toggle">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Лучшие выпускники получают предложения о работе от наших партнеров - брокерских компаний и инвестиционных фондов. Также мы помогаем с составлением резюме и подготовкой к собеседованию.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section class="cta cta-secondary">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Остались вопросы?</h2>
+                <p>Запишитесь на бесплатную консультацию с нашим специалистом</p>
+                <a href="#" class="btn btn-primary btn-lg">Записаться</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="ProTrade Academy">
+                        <span>ProTrade</span>
+                    </div>
+                    <p>Обучаем профессиональному трейдингу с 2008 года. Наша миссия - сделать финансовые рынки доступными для каждого.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Курсы</h3>
+                    <ul>
+                        <li><a href="#">Для начинающих</a></li>
+                        <li><a href="#">Технический анализ</a></li>
+                        <li><a href="#">Фундаментальный анализ</a></li>
+                        <li><a href="#">Алготрейдинг</a></li>
+                        <li><a href="#">Психология трейдинга</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Преподаватели</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i>Томск</li>
+                        <li><i class="fas fa-phone"></i> +7 (952) 800-16-70</li>
+                        <li><i class="fas fa-envelope"></i> protrade1academy@gmail.com</li>
+                    </ul>
+                    <div class="newsletter">
+                        <h4>Подписка на новости</h4>
+                        <form>
+                            <input type="email" placeholder="Ваш email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2020-2025 ProTrade Academy. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
